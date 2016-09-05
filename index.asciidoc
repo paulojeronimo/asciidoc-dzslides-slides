@@ -173,6 +173,11 @@ $ ./builder/dzslides/build server
 [{source}]
 == Enviando o repositório para o GitHub (1/2)
 
+* Edite e salve o conteúdo do `README.md`:
+----
+$ vim README.md
+----
+
 * Faça o teu primeiro commit:
 ----
 $ git add .
