@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html class="aspect-4-3">
+  <head>
+    <meta charset="utf-8">
+    <title>AsciiDoc + DZSlides</title>
+    <meta name="description" content="Contrução de slides com AsciiDoc e DZSlides.">
+    <meta name="author" content="Paulo Jerônimo, @paulojeronimo">
+    <meta name="copyright" content="CC BY-SA 2.0">
+    <meta name="generator" content="AsciiDoc 8.6.9, dzslides backend. Code highlighting courtesy of highlight.js.">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700,200,300&amp;family=Cedarville+Cursive">
+    <link rel="stylesheet" href="./dzslides/themes/highlight/monokai.css">
+    <link rel="stylesheet" href="./dzslides/themes/style/stormy.css">
+    <style>
+section:not(.topic) > h2 {
+  display: none;
+}
+    </style>
+    <!-- bug in full screen image if include dzslides.css before ours -->
+    <link rel="stylesheet" href="./dzslides/core/dzslides.css">
+    <link rel="stylesheet" href="./dzslides/themes/transition/fade.css">
+  </head>
+  <body>
+    <section class="title">
+      <h1><strong>AsciiDoc</strong> + <strong>DZSlides</strong></h1>
+      <footer>Paulo Jerônimo, @paulojeronimo</footer>
+    </section>
+<section class="topic">
+<h2>paulojeronimo.github.io/asciidoc-dzslides-slides</h2>
+<img src="images/presentation-qrcode.png" alt="http://paulojeronimo.github.io/asciidoc-dzslides-slides" class="middle stretch-y">
+</section>
+<section>
+<blockquote>
+<p>Você se considera um desenvolvedor profissional e <strong>ainda utiliza o PowerPoint</strong> para criar tuas apresentações?</p>
+</blockquote>
+</section>
+<section>
+<figure>
+<img src="images/mr-bean.jpg" alt="mr-bean.jpg">
+<figcaption></figcaption></figure>
+</section>
+<section class="topic intro">
+<h2><strong>Escreva</strong> slides em <strong>AsciiDoc</strong></h2>
+</section>
+<section>
+<ul>
+<li>
+Use qualquer <strong>editor de textos</strong> (ex.: <a href="http://www.vim.org">Vim</a>).
+</li>
+<li>
+Insira <strong>marcações <a href="https://paulojeronimo.github.io/asciidoc-e-asciidoctor">AsciiDoc</a></strong> nesse texto.
+</li>
+<li>
+Trate tua apresentação como deveria tratar o teu <strong>código fonte</strong>:
+<ul>
+<li>
+Controle o seu código com o <a href="https://git-scm.com">Git</a>.
+</li>
+<li>
+Se a apresentação for pública (geralmente é) disponibilize-a no <a href="https://github.com">GitHub</a>:
+<ul>
+<li>
+Na <strong>branch master</strong>: armazene o <strong>código fonte</strong> da apresentação.
+</li>
+<li>
+Na <strong>branch gh-pages</strong> (utilizada pelo <a href="https://pages.github.com">GitHub Pages</a>): disponibize a <strong>versão HTML</strong> da apresentação.
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</section>
+<section class="topic intro">
+<h2><strong>Gere</strong> a apresentação em <strong>HTML</strong></h2>
+</section>
+<section>
+<ul>
+<li>
+Não dependa de outra ferramenta para visualizar teus slides senão um <strong>browser</strong>.
+<ul>
+<li>
+Isso facilita tua apresentação ser <strong>visível em qualquer dispositivo</strong>.
+</li>
+</ul>
+</li>
+<li>
+Gere slides em HTML a partir do <a href="https://paulojeronimo.github.io/asciidoc-e-asciidoctor">AsciiDoc</a>. Para isso, utilize uma das seguintes alternativas:
+<ul>
+<li>
+<a href="https://github.com/mojavelinux/asciidoc-dzslides-backend">asciidoc-dzslides-backend</a>
+</li>
+<li>
+<a href="https://github.com/mojavelinux/asciidoctor-reveal.js">asciidoctor-reveal.js</a>
+</li>
+<li>
+<a href="https://github.com/mojavelinux/asciidoctor-bespoke">asciidoctor-bespoke</a>
+</li>
+</ul>
+</li>
+</ul>
+</section>
+<section class="topic intro">
+<h2>AsciiDoc + <strong>DZSlides</strong></h2>
+</section>
+<section>
+<ul>
+<li>
+O mais antigo!
+</li>
+<li>
+Utiliza o <a href="http://www.methods.co.nz/asciidoc/">asciidoc</a> (e não o <a href="http://asciidoctor.org/">asciidoctor</a>).
+</li>
+<li>
+O <a href="http://www.methods.co.nz/asciidoc/">asciidoc</a> depende apenas do <a href="https://www.python.org">Python</a>.
+<ul>
+<li>
+O <a href="http://asciidoctor.org/">asciidoctor</a>, por outro lado, precisa só do <a href="https://www.ruby-lang.org">Ruby</a>.
+</li>
+</ul>
+</li>
+<li>
+Cria aplicações em HTML e CSS utilizando o <a href="http://paulrouget.com/dzslides/">DZSlides</a>.
+</li>
+</ul>
+</section>
+<section>
+<ul>
+<li>
+Depende do <a href="https://github.com/mojavelinux/asciidoc-dzslides-backend">asciidoc-dzslides-backend</a>.
+<ul>
+<li>
+Se desejar customizar a geração, faça um fork desse projeto e adapte-o. (<a href="https://github.com/paulojeronimo/asciidoc-dzslides-backend">exemplo</a>)
+</li>
+</ul>
+</li>
+<li>
+Depende de um <a href="https://github.com/mojavelinux/dzslides">fork do dzslides</a>.
+<ul>
+<li>
+Temas são criados nesse fork. Você pode adaptá-los ou criar novos. (<a href="https://github.com/paulojeronimo/dzslides">exemplo</a>).
+</li>
+</ul>
+</li>
+</ul>
+</section>
+<section>
+<ul>
+<li>
+Apresentações de exemplo:
+<ul>
+<li>
+<a href="http://mojavelinux.github.io/decks/discover-zen-writing-asciidoc/cojugs201305/">Discover the Zen of Writing (Ascii)Docs</a>
+</li>
+<li>
+<a href="http://mojavelinux.github.io/decks/asciidoc-with-pleasure/rwx2012/">Drop the angled brackets. Write (Ascii)Docs with pleasure!</a>
+</li>
+<li>
+<a href="https://paulojeronimo.github.io/finisher/">finisher.(guru|test)</a>
+</li>
+</ul>
+</li>
+</ul>
+</section>
+<section class="topic intro">
+<h2>Como faço as <strong>firulas?</strong></h2>
+</section>
+<section>
+<ul>
+<li>
+Com <strong>CSS</strong> e &#8230;
+</li>
+<li>
+<strong>Coisas que se movimentam</strong>:
+<ul>
+<li>
+<strong>Gifs animados</strong>
+</li>
+<li>
+<strong>Vídeos</strong>
+</li>
+<li>
+<strong>SVG</strong>
+</li>
+</ul>
+</li>
+</ul>
+</section>
+<section>
+<figure>
+<img src="images/usain-bolt.gif" alt="usain-bolt.gif">
+<figcaption></figcaption></figure>
+</section>
+<section class="topic intro">
+<h2><strong>Como crio</strong> uma apresentação nesse modelo?</h2>
+</section>
+<section>
+<ul>
+<li>
+Abra um <strong>shell Bash</strong> com os seguintes comandos já instalados e no PATH:
+<ul>
+<li>
+<a href="https://git-scm.org">git</a> (óbvio)
+</li>
+<li>
+<a href="http://www.methods.co.nz/asciidoc/">asciidoc</a>
+</li>
+<li>
+<a href="https://github.com/fukuchi/libqrencode">qrencode</a>
+</li>
+<li>
+<a href="https://pt.wikipedia.org/wiki/Rsync">rsync</a>
+</li>
+</ul>
+</li>
+<li>
+<strong>Crie um repositório Git</strong>, que irá conter os slides.
+</li>
+<li>
+Para não começar do zero, <strong>clone o conteúdo destes slides</strong> para esse teu novo repositório.
+</li>
+</ul>
+</section>
+<section>
+<ul>
+<li>
+Crie teus slides editando o arquivo <strong>index.asciidoc</strong>.
+<ul>
+<li>
+Armazene as imagens dos teus slides no diretório <strong>images</strong>.
+</li>
+</ul>
+</li>
+<li>
+<strong>O próximo slide demonstra</strong> como seriam estes passos.
+<ul>
+<li>
+Repositório exemplificado: <strong>apresentando-como-um-desenvolvedor</strong>.
+</li>
+</ul>
+</li>
+</ul>
+</section>
+<section class="topic source">
+<h2>Criando o repositório da apresentação (1/2)</h2>
+<ul>
+<li>
+Abra um shell e, para ele, copie as linhas a seguir:
+</li>
+</ul>
+<div class="listing">
+<pre class="no-highlight"><code>export dir=apresentando-como-um-desenvolvedor
+bash &lt;&lt;'EOF'
+set -e
+repo=git@github.com:paulojeronimo/asciidoc-dzslides-slides
+git clone $repo $dir
+cd $dir &amp;&amp; rm -rf .git
+EOF</code></pre>
+</div>
+</section>
+<section class="topic source">
+<h2>Criando o repositório da apresentação (2/2)</h2>
+<ul>
+<li>
+Reconstrua o repositório:
+</li>
+</ul>
+<div class="listing">
+<pre class="no-highlight"><code>$ cd $dir
+$ git init</code></pre>
+</div>
+<ul>
+<li>
+Clone o projeto <a href="https://github.com/paulojeronimo/asciidoc-builder">asciidoc-builder</a>:
+</li>
+</ul>
+<div class="listing">
+<pre class="no-highlight"><code>$ git clone git@github.com:paulojeronimo/asciidoc-builder builder</code></pre>
+</div>
+</section>
+<section class="topic source">
+<h2>Editando e visualizando a apresentação</h2>
+<ul>
+<li>
+Execute:
+</li>
+</ul>
+<div class="listing">
+<pre class="no-highlight"><code>$ vim index.asciidoc
+$ ./builder/dzslides/build</code></pre>
+</div>
+<ul>
+<li>
+Noutro shell, deixe um servidor HTTP executando:
+</li>
+</ul>
+<div class="listing">
+<pre class="no-highlight"><code>$ ./builder/dzslides/build server</code></pre>
+</div>
+<ul>
+<li>
+Acesse <a href="http://localhost:8080">http://localhost:8080</a>
+</li>
+</ul>
+</section>
+<section class="topic source">
+<h2>Enviando o repositório para o GitHub (1/2)</h2>
+<ul>
+<li>
+Edite e salve o conteúdo do <span class="monospaced">README.md</span>:
+</li>
+</ul>
+<div class="listing">
+<pre class="no-highlight"><code>$ vim README.md</code></pre>
+</div>
+<ul>
+<li>
+Faça o teu primeiro commit:
+</li>
+</ul>
+<div class="listing">
+<pre class="no-highlight"><code>$ git add .
+$ git commit -am 'Primeiro commit'</code></pre>
+</div>
+</section>
+<section class="topic source">
+<h2>Enviando o repositório para o GitHub (2/2)</h2>
+<ul>
+<li>
+<a href="https://help.github.com/articles/creating-a-new-repository/">Crie o teu novo repositório no GitHub</a>.
+</li>
+<li>
+Faça o <strong>push</strong> do teu repositório local para o GitHub (exemplo):
+</li>
+</ul>
+<div class="listing">
+<pre class="no-highlight"><code>$ git remote add origin git@github.com:paulojeronimo/apresentando-como-um-desenvolvedor.git
+$ git push -u origin master</code></pre>
+</div>
+</section>
+<section class="topic source">
+<h2>Publicando a apresentação no GitHub Pages</h2>
+<ul>
+<li>
+Execute:
+</li>
+</ul>
+<div class="listing">
+<pre class="no-highlight"><code>$ ./builder/dzslides/build publish_on_gh_pages</code></pre>
+</div>
+<ul>
+<li>
+Acesse <a href="http://paulojeronimo.github.io/apresentando-como-um-desenvolvedor">http://paulojeronimo.github.io/apresentando-como-um-desenvolvedor</a> (exemplo)
+</li>
+</ul>
+</section>
+<section>
+<figure>
+<a class="image" href="http://cinema.uol.com.br/album/2013/04/11/a-morte-do-demonio-2013.htm#fotoNav=8">
+<img src="images/demo.jpg" alt="demo.jpg">
+</a>
+<figcaption>Demo !!!</figcaption></figure>
+</section>
+<section class="topic recap final">
+<h2>Últimas palavras</h2>
+<hgroup>
+  <h2><a href="http://www.html5rocks.com/pt/slides">+ apresentações em HTML</a></h2>
+</hgroup>
+</section>
+<section class="topic recap final">
+<h2>Últimas palavras</h2>
+<ul>
+<li>
+Use <strong>editores de texto leves</strong>!
+<ul>
+<li>
+<strong>Tipo o &#8230;</strong> <a href="http://www.vim.org">Vim</a>
+</li>
+</ul>
+</li>
+<li>
+Escreva de forma fluente: <a href="http://mojavelinux.github.io/presentation-write-fluently/">1</a>, <a href="http://mojavelinux.github.io/presentation-write-fluently/transcript.html">2</a>, <a href="https://accessyoutube.org.uk/7+Ways+To+Hack+Your+Brain">3</a>
+</li>
+<li>
+Escreva em <strong>linguagens de marcação leves (LMLs)</strong>. <strong>Invista</strong>, no mínimo, em:
+<ul>
+<li>
+<a href="https://guides.github.com/features/mastering-markdown/">Markdown</a>
+</li>
+<li>
+<a href="https://paulojeronimo.github.io/asciidoc-e-asciidoctor">AsciiDoc</a>
+</li>
+</ul>
+</li>
+<li>
+Outras LMLs muito comuns (das <a href="https://en.wikipedia.org/wiki/Lightweight_markup_language">várias alternativas existentes</a>): <a href="http://txt2tags.org/">Txt2tags</a> (brasileira), <a href="http://docutils.sourceforge.net/rst.html">reStructuredText</a>.
+</li>
+</ul>
+</section>
+<section class="topic ending">
+<h2 class="name">Fim! Elabore apresentações como um desenvolvedor profissional! ;)</h2>
+<p class="footer"><a href="http://paulojeronimo.github.io/asciidoc-dzslides-slides">http://paulojeronimo.github.io/asciidoc-dzslides-slides</a></p>
+</section>
+    <script src="./dzslides/core/dzslides.js"></script>
+    <script src="./dzslides/highlight/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
